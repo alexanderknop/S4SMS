@@ -23,19 +23,18 @@ double augmented_shivers_sort::operator()(vector<int> array) {
 		while(!isnan(*y) && pow(2, (int) log2(*y)) <= (*z)) {
 			if((*x) < (*z)) {
 				result += (*x) + (*y);
-	   		        merge(x, y);
+	   		    merge(x, y);
 			} else {
 				result += (*y) + (*z);
-	   		        merge(y, z);
+	   		    merge(y, z);
 			}
 		}
 	}
 
 	while(stack.size() > 1) {
 		result += (*y) + (*z);
-		merge(y, z);		
+		merge(y, z);
 	}
 
 	return result;
 }
-

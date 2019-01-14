@@ -26,10 +26,10 @@ double adaptive_shivers_sort::operator()(vector<int> array) {
 				merge(x, y);
 			} else if (!isnan(*y) && !isnan(*x) && (int) log2(*y) >= (int) log2(*x)) {
 				result += (*x) + (*y);
-                                merge(x, y);
+                merge(x, y);
 			} else if (!isnan(*y) && (int) log2(*z) >= (int) log2(*y)) {
 				result += (*y) + (*z);
-                                merge(y, z);
+                merge(y, z);
 			} else {
 				break;
 			}
@@ -38,9 +38,8 @@ double adaptive_shivers_sort::operator()(vector<int> array) {
 
 	while(stack.size() > 1) {
 		result += (*y) + (*z);
-		merge(y, z);		
+		merge(y, z);
 	}
 
 	return result;
 }
-

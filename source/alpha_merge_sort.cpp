@@ -25,10 +25,10 @@ double alpha_merge_sort::operator()(vector<int> array) {
 		while((*y) <= m_alpha * (*z) || (*x) <= m_alpha * (*y)) {
 			if((*x) < (*z)) {
 				result += (*x) + (*y);
-	   		        merge(x, y);
+	   		    merge(x, y);
 			} else {
 				result += (*y) + (*z);
-	   		        merge(y, z);
+	   		    merge(y, z);
 			}
 		}
 	}
