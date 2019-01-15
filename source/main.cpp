@@ -13,6 +13,7 @@
 #include "shivers_sort.h"
 #include "augmented_shivers_sort.h"
 #include "adaptive_shivers_sort.h"
+#include "power_sort.h"
 #include "random_generator.h"
 #include "compose_generator.h"
 #include "uniform_generator.h"
@@ -132,6 +133,7 @@ int main(int argc, char** argv) {
 		cerr << "          shivers_sort\n";
 		cerr << "          adaprive_shivers_sort\n";
 		cerr << "          augmented_shivers_sort\n";
+        cerr << "          power_sort\n";
 
 
 		return 1;
@@ -147,6 +149,7 @@ int main(int argc, char** argv) {
 			cerr << "Missed parameter: SORTING_ALGORITHM.\n";
 			return 1;
 		}
+
 
 		if(strcmp(argv[params + 1], "alpha_stack_sort") == 0) {
 			if(argc < params + 2) {
@@ -178,6 +181,8 @@ int main(int argc, char** argv) {
 			algorithm = new adaptive_shivers_sort();
 		} else if(strcmp(argv[params + 1], "augmented_shivers_sort") == 0) {
 			algorithm = new augmented_shivers_sort();
+        } else if(strcmp(argv[params + 1], "power_sort") == 0) {
+			algorithm = new power_sort();
 		} else {
 			cerr << "Unknown algorithm.\n";
 			return 1;

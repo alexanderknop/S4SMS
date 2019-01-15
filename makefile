@@ -10,7 +10,8 @@ INCLUDES = -Iinclude
 SDIR = source
 _SRCS = compose_generator.cpp power_generator.cpp uniform_generator.cpp \
 	alpha_stack_sort.cpp main.cpp alpha_merge_sort.cpp tail_sort.cpp timsort.cpp \
-	shivers_sort.cpp augmented_shivers_sort.cpp adaptive_shivers_sort.cpp
+	shivers_sort.cpp augmented_shivers_sort.cpp adaptive_shivers_sort.cpp \
+	power_sort.cpp
 
 SRCS = $(patsubst %,$(SDIR)/%,$(_SRCS))
 

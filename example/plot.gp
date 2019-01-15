@@ -12,4 +12,5 @@ set output "plot.png"
 plot "sparse_2_merge_sort_uniform_1_100_100.dat" using 1:2 title '2-stack sort' with lines,\
 "sparse_2_stack_sort_uniform_1_100_100.dat" using 1:2 title '2-merge sort' with lines,\
 "sparse_shivers_sort_uniform_1_100_100.dat" using 1:2 title 'Shivers sort' with lines,\
-"sparse_adaptive_shivers_sort_uniform_1_100_100.dat" using 1:2 title 'adaptive Shivers sort' with lines
+"sparse_adaptive_shivers_sort_uniform_1_100_100.dat" using 1:2 title 'adaptive Shivers sort' with lines,\
+"sparse_power_sort_uniform_1_100_100.dat" using 1:2 title 'power sort' with lines
