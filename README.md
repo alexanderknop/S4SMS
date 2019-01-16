@@ -11,4 +11,4 @@ After that you need to sparse the file using sparse.py by running
 1_100_100.dat``. Finally, you may regenerate the plot using the command
 ``gnuplot plot.gp``.
 
-!["Uniform distribution form 1 to 100"](https://github.com/aaknop/S4SMS/raw/master/example/plot.png)
+!["Uniform distribution form 1 to 100"](https://github.com/aaknop/S4SMS/raw/master/example/uniform.png)
