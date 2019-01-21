@@ -14,6 +14,7 @@
 #include "augmented_shivers_sort.h"
 #include "adaptive_shivers_sort.h"
 #include "power_sort.h"
+#include "von_neumann_sort.h"
 #include "random_generator.h"
 #include "compose_generator.h"
 #include "uniform_generator.h"
@@ -183,6 +184,8 @@ int main(int argc, char** argv) {
 			algorithm = new augmented_shivers_sort();
         } else if(strcmp(argv[params + 1], "power_sort") == 0) {
 			algorithm = new power_sort();
+        } else if(strcmp(argv[params + 1], "von_neumann_sort") == 0) {
+			algorithm = new von_neumann_sort();
 		} else {
 			cerr << "Unknown algorithm.\n";
 			return 1;
