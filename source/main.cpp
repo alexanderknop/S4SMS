@@ -187,7 +187,7 @@ int main(int argc, char** argv) {
         } else if(strcmp(argv[params + 1], "von_neumann_sort") == 0) {
 			algorithm = new von_neumann_sort();
 		} else {
-			cerr << "Unknown algorithm.\n";
+			cerr << "Unknown algorithm " << argv[params + 1] << ".\n";
 			return 1;
 		}
 		params += 1;
