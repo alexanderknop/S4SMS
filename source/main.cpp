@@ -125,7 +125,7 @@ int main(int argc, char** argv) {
 		cerr << "DISTRIBUTION: \n";
 		cerr << "              uniform MIN MAX\n";
 		cerr << "              power MIN MAX POWER\n";
-		cerr << "              compose DISTRIBUTION DISTRIBUTION\n";
+		cerr << "              compose RATIO DISTRIBUTION DISTRIBUTION\n";
 
 		cerr << "SORTING_ALGORITHM: \n";
 		cerr << "          alpha_stack_sort ALPHA\n";
