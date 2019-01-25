@@ -28,7 +28,13 @@ After that you need to sparse the file using sparse.py by running
 
 
 ## Uniform Distribution
+
 !["Uniform distribution form 1 to 100"](https://github.com/aaknop/S4SMS/raw/master/example/uniform.png)
 
 ## Power Law Distribution
+
 !["Power Law distribution form 1 to 100 with the exponent 0.5"](https://github.com/aaknop/S4SMS/raw/master/example/power.png)
+
+## Mixture of Uniform Distributions
+
+!["Mixture of uniform distributions"](https://github.com/aaknop/S4SMS/raw/master/example/mixed.png)
