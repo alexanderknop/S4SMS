@@ -10,7 +10,7 @@ to the distribution D. We consider three types of distributions:
 
 - The uniform distribution over numbers between 1 and 100,
 - The power low distribution over numbers between 1 and 100 with the
-    exponent 0.5,
+    exponent 0.5 (note that the plots are almost identical),
 - A mixture of the uniform distribution over integers between 1 and
     100 and the uniform distribution over integers between 10000 and
     100000, with mixture weights 0.95 and 0.05. This distribution was
@@ -26,4 +26,9 @@ After that you need to sparse the file using sparse.py by running
 ``python sparsify.py DISTRIBUTION/YOUR_SORT.dat > DISTRIBUTION/sparse_YOUR_SORT.dat``. Finally, you may regenerate the plots using the command
 ``gnuplot plot.gp``.
 
+
+## Uniform Distribution
 !["Uniform distribution form 1 to 100"](https://github.com/aaknop/S4SMS/raw/master/example/uniform.png)
+
+## Power Law Distribution
+!["Power Law distribution form 1 to 100 with the exponent 0.5"](https://github.com/aaknop/S4SMS/raw/master/example/power.png)
