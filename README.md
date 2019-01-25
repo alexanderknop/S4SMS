@@ -4,17 +4,17 @@ Sam Buss and Alexander Knop.
 
 The test sequences use the following model. Since only merge costs were
 measured, the inputs to the sorts are sequences of run lengths (not arrays to
-be sorted).  Let $\mu$ be a distribution over integers. A sequence of $m$ run
-lengths is chosen by choosing each of the $m$ lengths independently according
-to the distribution $\mu$. We consider two types of distributions:
+be sorted).  Let D be a distribution over integers. A sequence of m run
+lengths is chosen by choosing each of the m lengths independently according
+to the distribution D. We consider three types of distributions:
 
-- The uniform distribution over numbers between $1$ and $100$,
-- The power low distribution over numbers between $1$ and $100$ with the
-    exponent $0.5$,
-- A mixture of the uniform distribution over integers between $1$ and
-    $100$ and the uniform distribution over integers between $10000$ and
-    $100000$, with mixture weights $0.95$ and $0.05$. This distribution was
-    specially tailored to work better with $3$-aware algorithms while still
+- The uniform distribution over numbers between 1 and 100,
+- The power low distribution over numbers between 1 and 100 with the
+    exponent 0.5,
+- A mixture of the uniform distribution over integers between 1 and
+    100 and the uniform distribution over integers between 10000 and
+    100000, with mixture weights 0.95 and 0.05. This distribution was
+    specially tailored to work better with 3-aware algorithms while still
     being formulated in a general way that avoids favoring any
     particular algorithm.
 
