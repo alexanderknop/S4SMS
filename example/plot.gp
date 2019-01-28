@@ -25,8 +25,8 @@ plot \
 "uniform/sparse_shivers_sort.dat" using 1:2 title 'Shivers sort' with lines,\
 "uniform/sparse_adaptive_shivers_sort.dat" using 1:2 title 'adaptive Shivers sort' with lines,\
 "uniform/sparse_power_sort.dat" using 1:2 title 'power sort' with lines,\
-"uniform/sparse_2_merge_sort.dat" using 1:2 title '2-stack sort' with lines,\
-"uniform/sparse_2_stack_sort.dat" using 1:2 title '2-merge sort' with lines
+"uniform/sparse_1.62_merge_sort.dat" using 1:2 title '1.62-stack sort' with lines,\
+"uniform/sparse_1.62_stack_sort.dat" using 1:2 title '1.62-merge sort' with lines
 
 set output "power.png"
 plot \
@@ -43,5 +43,5 @@ plot \
 "mixed/sparse_shivers_sort.dat" using 1:2 title 'Shivers sort' with lines,\
 "mixed/sparse_adaptive_shivers_sort.dat" using 1:2 title 'adaptive Shivers sort' with lines,\
 "mixed/sparse_power_sort.dat" using 1:2 title 'power sort' with lines,\
-"mixed/sparse_2_stack_sort.dat" using 1:2 title '2-stack sort' with lines,\
-"mixed/sparse_2_merge_sort.dat" using 1:2 title '2-merge sort' with lines
+"mixed/sparse_1.62_stack_sort.dat" using 1:2 title '1.62-stack sort' with lines,\
+"mixed/sparse_1.62_merge_sort.dat" using 1:2 title '1.62-merge sort' with lines
